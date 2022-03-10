@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SIGTModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SIGTModelStoreContainer">
+          <EntitySet Name="Clientes" EntityType="SIGTModel.Store.Clientes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrdenServicio" EntityType="SIGTModel.Store.OrdenServicio" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Reparaciones" EntityType="SIGTModel.Store.Reparaciones" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_OrdenServicio_Clientes1" Association="SIGTModel.Store.FK_OrdenServicio_Clientes1">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reparaciones_OrdenServicio" Association="SIGTModel.Store.FK_Reparaciones_OrdenServicio">
+            <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+            <End Role="Reparaciones" EntitySet="Reparaciones" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="IDCliente" />
+          </Key>
+          <Property Name="RazonSocial" Type="nvarchar" MaxLength="50" />
+          <Property Name="DVH" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDEstado" Type="int" />
+          <Property Name="IDCliente" Type="int" Nullable="false" />
+          <Property Name="LastEditDate" Type="datetime" />
+          <Property Name="CreationDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OrdenServicio">
+          <Key>
+            <PropertyRef Name="IDOrden" />
+          </Key>
+          <Property Name="IDCliente" Type="int" Nullable="false" />
+          <Property Name="FechaIngreso" Type="nvarchar" MaxLength="50" />
+          <Property Name="Numero" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDOrden" Type="int" Nullable="false" />
+          <Property Name="LastEditDate" Type="datetime" />
+          <Property Name="CreationDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Reparaciones">
+          <Key>
+            <PropertyRef Name="IDReparacion" />
+          </Key>
+          <Property Name="IDReparacion" Type="int" Nullable="false" />
+          <Property Name="IDOrden" Type="int" Nullable="false" />
+          <Property Name="Serie" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDEstado" Type="int" />
+          <Property Name="IDEquipo" Type="int" />
+          <Property Name="IDUsuario" Type="int" />
+          <Property Name="DVH" Type="int" />
+          <Property Name="Falla" Type="nvarchar(max)" />
+          <Property Name="Tarea" Type="nvarchar(max)" />
+          <Property Name="Observaciones" Type="nvarchar(max)" />
+          <Property Name="FechaReparacion" Type="nvarchar" MaxLength="50" />
+          <Property Name="Modelo" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastEditDate" Type="datetime" />
+          <Property Name="CreationDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_OrdenServicio_Clientes1">
+          <End Role="Clientes" Type="SIGTModel.Store.Clientes" Multiplicity="1" />
+          <End Role="OrdenServicio" Type="SIGTModel.Store.OrdenServicio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="IDCliente" />
+            </Principal>
+            <Dependent Role="OrdenServicio">
+              <PropertyRef Name="IDCliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reparaciones_OrdenServicio">
+          <End Role="OrdenServicio" Type="SIGTModel.Store.OrdenServicio" Multiplicity="1" />
+          <End Role="Reparaciones" Type="SIGTModel.Store.Reparaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrdenServicio">
+              <PropertyRef Name="IDOrden" />
+            </Principal>
+            <Dependent Role="Reparaciones">
+              <PropertyRef Name="IDOrden" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SIGTModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SIGTEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="SIGTModel.Clientes" />
+          <EntitySet Name="OrdenServicio" EntityType="SIGTModel.OrdenServicio" />
+          <EntitySet Name="Reparaciones" EntityType="SIGTModel.Reparaciones" />
+          <AssociationSet Name="FK_OrdenServicio_Clientes1" Association="SIGTModel.FK_OrdenServicio_Clientes1">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reparaciones_OrdenServicio" Association="SIGTModel.FK_Reparaciones_OrdenServicio">
+            <End Role="OrdenServicio" EntitySet="OrdenServicio" />
+            <End Role="Reparaciones" EntitySet="Reparaciones" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="IDCliente" />
+          </Key>
+          <Property Name="RazonSocial" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DVH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDEstado" Type="Int32" />
+          <Property Name="IDCliente" Type="Int32" Nullable="false" />
+          <Property Name="LastEditDate" Type="DateTime" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <NavigationProperty Name="OrdenServicio" Relationship="SIGTModel.FK_OrdenServicio_Clientes1" FromRole="Clientes" ToRole="OrdenServicio" />
+        </EntityType>
+        <EntityType Name="OrdenServicio">
+          <Key>
+            <PropertyRef Name="IDOrden" />
+          </Key>
+          <Property Name="IDCliente" Type="Int32" Nullable="false" />
+          <Property Name="FechaIngreso" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Numero" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDOrden" Type="Int32" Nullable="false" />
+          <Property Name="LastEditDate" Type="DateTime" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <NavigationProperty Name="Clientes" Relationship="SIGTModel.FK_OrdenServicio_Clientes1" FromRole="OrdenServicio" ToRole="Clientes" />
+          <NavigationProperty Name="Reparaciones" Relationship="SIGTModel.FK_Reparaciones_OrdenServicio" FromRole="OrdenServicio" ToRole="Reparaciones" />
+        </EntityType>
+        <EntityType Name="Reparaciones">
+          <Key>
+            <PropertyRef Name="IDReparacion" />
+          </Key>
+          <Property Name="IDReparacion" Type="Int32" Nullable="false" />
+          <Property Name="IDOrden" Type="Int32" Nullable="false" />
+          <Property Name="Serie" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDEstado" Type="Int32" />
+          <Property Name="IDEquipo" Type="Int32" />
+          <Property Name="IDUsuario" Type="Int32" />
+          <Property Name="DVH" Type="Int32" />
+          <Property Name="Falla" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Tarea" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Observaciones" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="FechaReparacion" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Modelo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LastEditDate" Type="DateTime" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <NavigationProperty Name="OrdenServicio" Relationship="SIGTModel.FK_Reparaciones_OrdenServicio" FromRole="Reparaciones" ToRole="OrdenServicio" />
+        </EntityType>
+        <Association Name="FK_OrdenServicio_Clientes1">
+          <End Role="Clientes" Type="SIGTModel.Clientes" Multiplicity="1" />
+          <End Role="OrdenServicio" Type="SIGTModel.OrdenServicio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="IDCliente" />
+            </Principal>
+            <Dependent Role="OrdenServicio">
+              <PropertyRef Name="IDCliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reparaciones_OrdenServicio">
+          <End Role="OrdenServicio" Type="SIGTModel.OrdenServicio" Multiplicity="1" />
+          <End Role="Reparaciones" Type="SIGTModel.Reparaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrdenServicio">
+              <PropertyRef Name="IDOrden" />
+            </Principal>
+            <Dependent Role="Reparaciones">
+              <PropertyRef Name="IDOrden" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SIGTModelStoreContainer" CdmEntityContainer="SIGTEntities">
+          <EntitySetMapping Name="Clientes"><EntityTypeMapping TypeName="SIGTModel.Clientes"><MappingFragment StoreEntitySet="Clientes">
+            <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+            <ScalarProperty Name="DVH" ColumnName="DVH" />
+            <ScalarProperty Name="IDEstado" ColumnName="IDEstado" />
+            <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+            <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+            <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrdenServicio"><EntityTypeMapping TypeName="SIGTModel.OrdenServicio"><MappingFragment StoreEntitySet="OrdenServicio">
+            <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+            <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+            <ScalarProperty Name="Numero" ColumnName="Numero" />
+            <ScalarProperty Name="IDOrden" ColumnName="IDOrden" />
+            <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+            <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Reparaciones"><EntityTypeMapping TypeName="SIGTModel.Reparaciones"><MappingFragment StoreEntitySet="Reparaciones">
+            <ScalarProperty Name="IDReparacion" ColumnName="IDReparacion" />
+            <ScalarProperty Name="IDOrden" ColumnName="IDOrden" />
+            <ScalarProperty Name="Serie" ColumnName="Serie" />
+            <ScalarProperty Name="IDEstado" ColumnName="IDEstado" />
+            <ScalarProperty Name="IDEquipo" ColumnName="IDEquipo" />
+            <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+            <ScalarProperty Name="DVH" ColumnName="DVH" />
+            <ScalarProperty Name="Falla" ColumnName="Falla" />
+            <ScalarProperty Name="Tarea" ColumnName="Tarea" />
+            <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+            <ScalarProperty Name="FechaReparacion" ColumnName="FechaReparacion" />
+            <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+            <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+            <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="SIGTModel.Clientes" Width="1.5" PointX="0.75" PointY="1.625" Height="2.0853483072916665" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGTModel.OrdenServicio" Width="1.5" PointX="3" PointY="1.625" Height="2.2496956380208335" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIGTModel.Reparaciones" Width="1.5" PointX="5.25" PointY="1" Height="3.400126953125" IsExpanded="true" />
+        <AssociationConnector Association="SIGTModel.FK_OrdenServicio_Clientes1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.6676741536458333" />
+          <ConnectorPoint PointX="3" PointY="2.6676741536458333" />
+        </AssociationConnector>
+        <AssociationConnector Association="SIGTModel.FK_Reparaciones_OrdenServicio" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.7498478190104167" />
+          <ConnectorPoint PointX="5.25" PointY="2.7498478190104167" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

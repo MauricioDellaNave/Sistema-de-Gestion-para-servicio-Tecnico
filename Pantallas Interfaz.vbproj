@@ -1,0 +1,976 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56B5F55C-C853-4152-BE10-657EAC103445}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistema_de_Gestion_Tecnica.My.MyApplication</StartupObject>
+    <RootNamespace>Sistema_de_Gestion_Tecnica</RootNamespace>
+    <AssemblyName>Sistema de Gestion Tecnica</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.2.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema de Gestion Tecnica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema de Gestion Tecnica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MacBook Black.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4051704AD3C245B8FE12818CC8FAC33CD783E4DB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Pantallas Interfaz_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Core.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\System32\Core.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="CRDB_ADOPLUS, Version=14.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Archivos de programa\SAP BusinessObjects\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CRDB_ADOPLUS.DLL</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Office.Interop.InfoPath.Xml, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Archivos de programa\Microsoft Office\Office12\Microsoft.Office.Interop.InfoPath.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\..\..\..\..\Archivos de programa\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CapaAccesoDatos" />
+    <Import Include="CapaNegocio" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Crystalreportviewer1.vb" />
+    <Compile Include="Mensajes.Designer.vb">
+      <DependentUpon>Mensajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.vb">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sin Conexion.Designer.vb">
+      <DependentUpon>Sin Conexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sin Conexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMRepContrato.Designer.vb">
+      <DependentUpon>ABMRepContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMRepContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\DSRepuestos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRepuestos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\DSRepuestos.vb">
+      <DependentUpon>DSRepuestos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormDolarLibre.Designer.vb">
+      <DependentUpon>FormDolarLibre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormDolarLibre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\FrmManoObra.Designer.vb">
+      <DependentUpon>FrmManoObra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FrmManoObra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ImprimirRepuestos.Designer.vb">
+      <DependentUpon>ImprimirRepuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ImprimirRepuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ReporteRepuestos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteRepuestos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Consultas\ContactosBAS.Designer.vb">
+      <DependentUpon>ContactosBAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Consultas\ContactosBAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultas.Designer.vb">
+      <DependentUpon>FormConsultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormAEVentas.Designer.vb">
+      <DependentUpon>FormAEVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormAEVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultaEquipoVendido.Designer.vb">
+      <DependentUpon>FormConsultaEquipoVendido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultaEquipoVendido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultaVendedor.Designer.vb">
+      <DependentUpon>FormConsultaVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultaVendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Contratos\ABMMovimientos.Designer.vb">
+      <DependentUpon>ABMMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Contratos\ABMMovimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Contratos\FrmEgresoMercaderia.Designer.vb">
+      <DependentUpon>FrmEgresoMercaderia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Contratos\FrmEgresoMercaderia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Contratos\FrmMovimientos.Designer.vb">
+      <DependentUpon>FrmMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Contratos\FrmMovimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Contratos\FrmIngresoMercaderia.Designer.vb">
+      <DependentUpon>FrmIngresoMercaderia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Contratos\FrmIngresoMercaderia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\FormImprecionIngreso.Designer.vb">
+      <DependentUpon>FormImprecionIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\FormImprecionIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\FormImprecionServicios.Designer.vb">
+      <DependentUpon>FormImprecionServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\FormImprecionServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\FormImpresionPresupuestos.Designer.vb">
+      <DependentUpon>FormImpresionPresupuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\FormImpresionPresupuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\InformePresupuestos.Designer.vb">
+      <DependentUpon>InformePresupuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\InformePresupuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\InformeServicios.Designer.vb">
+      <DependentUpon>InformeServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\InformeServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\ReportePresupuesto.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePresupuesto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Impresiones\ReporteServicios.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteServicios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\DTFormReparacionesRowChangeEvent.vb" />
+    <Compile Include="Sistema\Reparaciones\FormIngresoDepo.Designer.vb">
+      <DependentUpon>FormIngresoDepo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormIngresoDepo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormNPI.Designer.vb">
+      <DependentUpon>FormNPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormNPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\InformeFrmRep.Designer.vb">
+      <DependentUpon>InformeFrmRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\InformeFrmRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\ReportFormRep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFormRep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\EtiquetaIngreso.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtiquetaIngreso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FrmEtiquetaIngreso.Designer.vb">
+      <DependentUpon>FrmEtiquetaIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FrmEtiquetaIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FrmOrdenIngreso.Designer.vb">
+      <DependentUpon>FrmOrdenIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FrmOrdenIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\ReportIngreso.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIngreso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\DsFormReparaciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\DsFormReparaciones.vb">
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\DsIngreso.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\DsIngreso.vb">
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormEgreso.Designer.vb">
+      <DependentUpon>FormEgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormEgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FrmIngreso.Designer.vb">
+      <DependentUpon>FrmIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FrmIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Backup.Designer.vb">
+      <DependentUpon>Backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\BackupRestore.Designer.vb">
+      <DependentUpon>BackupRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\BackupRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\FormBitacora.Designer.vb">
+      <DependentUpon>FormBitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\FormBitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\FormRestore.Designer.vb">
+      <DependentUpon>FormRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\FormRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMClientes.Designer.vb">
+      <DependentUpon>ABMClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMContactos.Designer.vb">
+      <DependentUpon>ABMContactos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMContactos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMDescuentos.Designer.vb">
+      <DependentUpon>ABMDescuentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMDescuentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMDireccion.Designer.vb">
+      <DependentUpon>ABMDireccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMDireccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMEquipos.Designer.vb">
+      <DependentUpon>ABMEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\ABMReparaciones.Designer.vb">
+      <DependentUpon>ABMReparaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\ABMReparaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMRepuestos.Designer.vb">
+      <DependentUpon>ABMRepuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMRepuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMTareas.Designer.vb">
+      <DependentUpon>ABMTareas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMTareas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMTelefonos.Designer.vb">
+      <DependentUpon>ABMTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\ABMTelefonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormClientes.Designer.vb">
+      <DependentUpon>FormClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormEquipos.Designer.vb">
+      <DependentUpon>FormEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormReparaciones.Designer.vb">
+      <DependentUpon>FormReparaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormReparaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormRepuestos.Designer.vb">
+      <DependentUpon>FormRepuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormRepuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormTareas.Designer.vb">
+      <DependentUpon>FormTareas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FormTareas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ABM\FrmDolar.Designer.vb">
+      <DependentUpon>FrmDolar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ABM\FrmDolar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ayuda\AcercaDe.Designer.vb">
+      <DependentUpon>AcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ayuda\AcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ayuda\FormAyuda.Designer.vb">
+      <DependentUpon>FormAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ayuda\FormAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormAEPendientes.Designer.vb">
+      <DependentUpon>FormAEPendientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormAEPendientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultaEquipo.Designer.vb">
+      <DependentUpon>FormConsultaEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Consultas\FormConsultaEquipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormServicio.Designer.vb">
+      <DependentUpon>FormServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\FormServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\IngresarEquipos.Designer.vb">
+      <DependentUpon>IngresarEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Reparaciones\IngresarEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Usuarios\ABMFamilias.Designer.vb">
+      <DependentUpon>ABMFamilias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\ABMFamilias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\ABMUsuarios.designer.vb">
+      <DependentUpon>ABMUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\ABMUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\FormClaveUsuario.Designer.vb">
+      <DependentUpon>FormClaveUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\FormClaveUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\ModificarUsuario.designer.vb">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\ModificarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\TelefonoABM.Designer.vb">
+      <DependentUpon>TelefonoABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\TelefonoABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariablesGlobales.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login.en-US.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes.resx">
+      <DependentUpon>Mensajes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sin Conexion.resx">
+      <DependentUpon>Sin Conexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMRepContrato.resx">
+      <DependentUpon>ABMRepContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormDolarLibre.resx">
+      <DependentUpon>FormDolarLibre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FrmManoObra.resx">
+      <DependentUpon>FrmManoObra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ImprimirRepuestos.resx">
+      <DependentUpon>ImprimirRepuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ReporteRepuestos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteRepuestos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Consultas\ContactosBAS.resx">
+      <DependentUpon>ContactosBAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Consultas\FormConsultas.resx">
+      <DependentUpon>FormConsultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Consultas\FormAEVentas.resx">
+      <DependentUpon>FormAEVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Consultas\FormConsultaEquipoVendido.resx">
+      <DependentUpon>FormConsultaEquipoVendido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Consultas\FormConsultaVendedor.resx">
+      <DependentUpon>FormConsultaVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Contratos\ABMMovimientos.resx">
+      <DependentUpon>ABMMovimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Contratos\FrmEgresoMercaderia.resx">
+      <DependentUpon>FrmEgresoMercaderia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Contratos\FrmMovimientos.resx">
+      <DependentUpon>FrmMovimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Contratos\FrmIngresoMercaderia.resx">
+      <DependentUpon>FrmIngresoMercaderia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Impresiones\FormImprecionIngreso.resx">
+      <DependentUpon>FormImprecionIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Impresiones\FormImprecionServicios.resx">
+      <DependentUpon>FormImprecionServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Impresiones\FormImpresionPresupuestos.resx">
+      <DependentUpon>FormImpresionPresupuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Impresiones\InformePresupuestos.resx">
+      <DependentUpon>InformePresupuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Impresiones\InformeServicios.resx">
+      <DependentUpon>InformeServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Impresiones\ReportePresupuesto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportePresupuesto.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Impresiones\ReporteServicios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteServicios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FormIngresoDepo.resx">
+      <DependentUpon>FormIngresoDepo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FormNPI.resx">
+      <DependentUpon>FormNPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\InformeFrmRep.resx">
+      <DependentUpon>InformeFrmRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\ReportFormRep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportFormRep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\EtiquetaIngreso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtiquetaIngreso.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FrmEtiquetaIngreso.resx">
+      <DependentUpon>FrmEtiquetaIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FrmOrdenIngreso.resx">
+      <DependentUpon>FrmOrdenIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\ReportIngreso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIngreso.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FormEgreso.resx">
+      <DependentUpon>FormEgreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FrmIngreso.resx">
+      <DependentUpon>FrmIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="My Project\app.manifest" />
+    <None Include="Pantallas Interfaz_TemporaryKey.pfx" />
+    <None Include="Sistema\ABM\DSRepuestos.xsc">
+      <DependentUpon>DSRepuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema\ABM\DSRepuestos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRepuestos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sistema\ABM\DSRepuestos.xss">
+      <DependentUpon>DSRepuestos.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema\Reparaciones\DsFormReparaciones.xsc">
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema\Reparaciones\DsFormReparaciones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFormReparaciones.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sistema\Reparaciones\DsFormReparaciones.xss">
+      <DependentUpon>DsFormReparaciones.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Seguridad\Backup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\BackupRestore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BackupRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\FormBitacora.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\FormRestore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMClientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMContactos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMContactos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMDescuentos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMDescuentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMDireccion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMDireccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMEquipos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\ABMReparaciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMReparaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMRepuestos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMRepuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMTareas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMTareas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\ABMTelefonos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormClientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormEquipos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FormReparaciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormReparaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormRepuestos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRepuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FormTareas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTareas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ABM\FrmDolar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDolar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Ayuda\AcercaDe.resx">
+      <DependentUpon>AcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Ayuda\FormAyuda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAyuda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Consultas\FormAEPendientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAEPendientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Consultas\FormConsultaEquipo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConsultaEquipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\FormServicio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Reparaciones\IngresarEquipos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IngresarEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ABMFamilias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ABMFamilias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ABMUsuarios.resx">
+      <DependentUpon>ABMUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\FormClaveUsuario.resx">
+      <DependentUpon>FormClaveUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\TelefonoABM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TelefonoABM.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sistema\Reparaciones\DsIngreso.xsc">
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </None>
+    <None Include="Sistema\Reparaciones\DsIngreso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsIngreso.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sistema\Reparaciones\DsIngreso.xss">
+      <DependentUpon>DsIngreso.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuarios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaAccesoDatos\Acceso a Datos.vbproj">
+      <Project>{85EE59DC-9018-4BD0-BF02-3FEFC4BE3A12}</Project>
+      <Name>Acceso a Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\Negocio.vbproj">
+      <Project>{B833B7D4-A625-4E6E-ADDB-70D4BEB842CF}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MacBook Black.ico" />
+    <None Include="Resources\Tick.png" />
+    <None Include="Resources\Desconectado.jpg" />
+    <None Include="Resources\fondo CN51.jpg" />
+    <None Include="Resources\CodigoBarra.jpg" />
+    <None Include="Resources\CodigoBarra1.jpg" />
+    <Content Include="SIGT.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SIGT_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>SIGT.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\CN3.jpg" />
+    <None Include="Resources\family2.jpg" />
+    <Content Include="Resources\ABMUsuarios\Agregar Usuario.jpg" />
+    <Content Include="Resources\ABMUsuarios\EliminarUsuario.jpg" />
+    <Content Include="Resources\ABMUsuarios\GrabarUsuario.jpg" />
+    <Content Include="Resources\ABMUsuarios\ModificarUsuario.jpg" />
+    <Content Include="Resources\ABMUsuarios\SalirUsuario.jpg" />
+    <None Include="Resources\EliminarUsuario.jpg" />
+    <None Include="Resources\Agregar Usuario.jpg" />
+    <None Include="Resources\Editar.jpg" />
+    <None Include="Resources\Agregar Usuario2.jpg" />
+    <None Include="Resources\EliminarUsuario2.jpg" />
+    <None Include="Resources\BtnAceptar.jpg" />
+    <None Include="Resources\BtnCancelar.jpg" />
+    <None Include="Resources\BtnAgregarFamilia.jpg" />
+    <None Include="Resources\BtnModificarFamilia.jpg" />
+    <None Include="Resources\BtnAgregarFamilia1.jpg" />
+    <None Include="Resources\BtnModificarFamilia1.jpg" />
+    <None Include="Resources\Dolar.jpg" />
+    <Content Include="Resources\Fondo.jpg" />
+    <None Include="Resources\SalirUsuario.jpg" />
+    <None Include="Resources\GrabarUsuario.jpg" />
+    <None Include="Resources\ModificarUsuario.jpg" />
+    <None Include="Resources\restore2.jpg" />
+    <None Include="Resources\GrabarUsuario2.jpg" />
+    <None Include="Resources\ModificarUsuario2.jpg" />
+    <None Include="Resources\SalirUsuario2.jpg" />
+    <None Include="Resources\MenuABMUsuarios.jpg" />
+    <None Include="Resources\MenuABMFamilias.jpg" />
+    <None Include="Resources\MenuABMFamilias1.jpg" />
+    <None Include="Resources\MenuABMUsuarios1.jpg" />
+    <None Include="Resources\LogoEcadat.jpg" />
+    <None Include="Resources\logoIntermec.jpg" />
+    <Content Include="Resources\Splash-SIGT.jpg" />
+    <Content Include="Resources\Splash.jpg" />
+    <None Include="Resources\Thumb_AIT_Family_09_PRO1.jpg" />
+    <None Include="Resources\Fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

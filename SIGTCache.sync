@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<syncDesignerSurface dslVersion="1.0.0.0" Id="6216ed8a-886d-4645-843f-cda56558f0b9" parentDesignerName="SIGTCache" codeGenerationMode="Cliente y servidor" synchronizeInOneTransaction="false" clientFileLocation="56b5f55c-c853-4152-be10-657eac103445" serverFileLocation="56b5f55c-c853-4152-be10-657eac103445" isRootSyncDesigner="true" rootSyncDesignerShouldGenerateCode="true" isClientSyncDesigner="false" isServerSyncDesigner="false" changeTrackingType="CoupledChangeTracking" xmlns="http://schemas.microsoft.com/dsltools/SyncDesigner">
+  <syncAdapters>
+    <syncAdapter Id="25665c3f-60be-4858-81cf-ad281595ab18" name="ClientesSyncAdapter" tableName="Clientes">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableSelectConflictDeletedRowsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableSelectConflictUpdatedRowsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableSelectIncrementalInsertsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableSelectIncrementalDeletesCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTableSelectIncrementalUpdatesCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+    <syncAdapter Id="4addbc02-01fa-4641-b12b-acc2d3589794" name="ReparacionesSyncAdapter" tableName="Reparaciones">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableSelectConflictDeletedRowsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableSelectConflictUpdatedRowsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableSelectIncrementalInsertsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableSelectIncrementalDeletesCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTableSelectIncrementalUpdatesCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+    <syncAdapter Id="7c1ec0fb-5d80-47ff-9fc9-bc29ee2d9d69" name="OrdenServicioSyncAdapter" tableName="OrdenServicio">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableSelectConflictDeletedRowsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableSelectConflictUpdatedRowsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableSelectIncrementalInsertsCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableSelectIncrementalDeletesCommand" />
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTableSelectIncrementalUpdatesCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+  </syncAdapters>
+  <syncTables>
+    <syncTable Id="60cad9ca-6bd9-4d81-9ccd-500b606babb8" name="ClientesSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="Clientes" deletedItemsTableName="Clientes_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.Clientes" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncGroup" />
+      </syncGroup>
+    </syncTable>
+    <syncTable Id="84b6bf12-a1ce-480e-b1c4-8e2ee7cc7f7e" name="ReparacionesSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="Reparaciones" deletedItemsTableName="Reparaciones_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.Reparaciones" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncGroup" />
+      </syncGroup>
+    </syncTable>
+    <syncTable Id="dc048507-ba75-4295-abcb-e1d8473e34ba" name="OrdenServicioSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="OrdenServicio" deletedItemsTableName="OrdenServicio_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.OrdenServicio" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncGroup" />
+      </syncGroup>
+    </syncTable>
+  </syncTables>
+  <syncGroups>
+    <syncGroup Id="f4fed682-b8ea-46a1-8f1f-d979b3ee2726" name="ClientesSyncGroup" />
+    <syncGroup Id="befc70ac-c45c-4884-966e-ab41a5ebc726" name="ReparacionesSyncGroup" />
+    <syncGroup Id="f0791c95-55e5-44b9-a8fb-c4b3a3f4a146" name="OrdenServicioSyncGroup" />
+  </syncGroups>
+  <clientSyncProvider>
+    <clientSyncProvider Id="e98b4f09-399e-4147-9b6f-3ada887ba3ef" name="SIGTCacheClientSyncProvider">
+      <syncConnection>
+        <syncConnectionMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientConnection" />
+      </syncConnection>
+    </clientSyncProvider>
+  </clientSyncProvider>
+  <serverSyncProvider>
+    <serverSyncProvider Id="23f0b5a3-8fb8-4a3c-a07a-d3c410a74828" name="SIGTCacheServerSyncProvider">
+      <syncAdapters>
+        <syncAdapterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncAdapter" />
+        <syncAdapterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncAdapter" />
+        <syncAdapterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncAdapter" />
+      </syncAdapters>
+      <syncConnection>
+        <syncConnectionMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ServerConnection" />
+      </syncConnection>
+      <selectNewAnchorCommand>
+        <syncAdapterCommandMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/selectNewAnchorCmd" />
+      </selectNewAnchorCommand>
+    </serverSyncProvider>
+  </serverSyncProvider>
+  <syncAgent>
+    <syncAgent name="SIGTCacheSyncAgent" synchronizeInOneTransaction="false">
+      <serverSyncProvider>
+        <serverSyncProviderMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/SIGTCacheServerSyncProvider" />
+      </serverSyncProvider>
+      <clientSyncProvider>
+        <clientSyncProviderMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/SIGTCacheClientSyncProvider" />
+      </clientSyncProvider>
+      <syncTables>
+        <syncTableMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ClientesSyncTable" />
+        <syncTableMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/ReparacionesSyncTable" />
+        <syncTableMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/OrdenServicioSyncTable" />
+      </syncTables>
+    </syncAgent>
+  </syncAgent>
+  <syncAdapterCommands>
+    <syncAdapterCommand Id="79d02e0d-22cc-4c54-af27-28ae82ccb4ee" commandText="INSERT INTO dbo.Clientes ([RazonSocial], [DVH], [IDEstado], [IDCliente], [LastEditDate], [CreationDate]) VALUES (@RazonSocial, @DVH, @IDEstado, @IDCliente, @LastEditDate, @CreationDate) SET @sync_row_count = @@rowcount" commandType="Text" name="ClientesSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@RazonSocial" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@DVH" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDEstado" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDCliente" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@LastEditDate" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@CreationDate" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="55d330aa-3ebf-449a-828a-215f104fa6c5" commandText="DELETE FROM dbo.Clientes WHERE ([IDCliente] = @IDCliente) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="ClientesSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDCliente1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_force_write" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="3256f2fc-9365-499e-a551-4204f4e5f768" commandText="UPDATE dbo.Clientes SET [RazonSocial] = @RazonSocial, [DVH] = @DVH, [IDEstado] = @IDEstado, [LastEditDate] = @LastEditDate, [CreationDate] = @CreationDate WHERE ([IDCliente] = @IDCliente) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="ClientesSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@RazonSocial1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@DVH1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDEstado1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@LastEditDate1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@CreationDate1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDCliente2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_force_write1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="cd2c25ca-6cd4-4f6d-a656-b842efd22973" commandText="SELECT [IDCliente], [DeletionDate] FROM dbo.Clientes_Tombstone WHERE ([IDCliente] = @IDCliente)" commandType="Text" name="ClientesSyncTableSelectConflictDeletedRowsCommand" commandKind="SelectConflictDeletedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDCliente3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="9bec89cd-7dc1-4f3d-a244-f7f3046b1307" commandText="SELECT [RazonSocial], [DVH], [IDEstado], [IDCliente], [LastEditDate], [CreationDate] FROM dbo.Clientes WHERE ([IDCliente] = @IDCliente)" commandType="Text" name="ClientesSyncTableSelectConflictUpdatedRowsCommand" commandKind="SelectConflictUpdatedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDCliente4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="cfc7ae07-9035-4090-9be8-223cd6c5cc58" commandText="SELECT [RazonSocial], [DVH], [IDEstado], [IDCliente], [LastEditDate], [CreationDate] FROM dbo.Clientes WHERE ([CreationDate] &gt; @sync_last_received_anchor AND [CreationDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="ClientesSyncTableSelectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="6f59449d-e920-448b-89ae-bfb91a72314d" commandText="SELECT [IDCliente], [DeletionDate] FROM dbo.Clientes_Tombstone WHERE (@sync_initialized = 1 AND [DeletionDate] &gt; @sync_last_received_anchor AND [DeletionDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="ClientesSyncTableSelectIncrementalDeletesCommand" commandKind="SelectIncrementalDeletesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_initialized" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor3" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="20686dac-8f25-4dd0-b068-b53b54522974" commandText="SELECT [RazonSocial], [DVH], [IDEstado], [IDCliente], [LastEditDate], [CreationDate] FROM dbo.Clientes WHERE ([LastEditDate] &gt; @sync_last_received_anchor AND [LastEditDate] &lt;= @sync_new_received_anchor AND [CreationDate] &lt;= @sync_last_received_anchor)" commandType="Text" name="ClientesSyncTableSelectIncrementalUpdatesCommand" commandKind="SelectIncrementalUpdatesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor4" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="296f7d76-e81a-423e-b489-accf45b7567d" commandText="INSERT INTO dbo.Reparaciones ([IDReparacion], [IDOrden], [Serie], [IDEstado], [IDEquipo], [IDUsuario], [DVH], [Falla], [Tarea], [Observaciones], [FechaReparacion], [Modelo], [LastEditDate], [CreationDate]) VALUES (@IDReparacion, @IDOrden, @Serie, @IDEstado, @IDEquipo, @IDUsuario, @DVH, @Falla, @Tarea, @Observaciones, @FechaReparacion, @Modelo, @LastEditDate, @CreationDate) SET @sync_row_count = @@rowcount" commandType="Text" name="ReparacionesSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDReparacion" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDOrden" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Serie" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDEstado2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDEquipo" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDUsuario" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@DVH2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Falla" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Tarea" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Observaciones" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@FechaReparacion" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Modelo" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@LastEditDate2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@CreationDate2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="14c0deb3-32a9-41de-9a76-80ab6e451da4" commandText="DELETE FROM dbo.Reparaciones WHERE ([IDReparacion] = @IDReparacion) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="ReparacionesSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDReparacion1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_force_write2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor5" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="b2c24588-8150-47d3-a17b-c6154e5de9f2" commandText="UPDATE dbo.Reparaciones SET [IDOrden] = @IDOrden, [Serie] = @Serie, [IDEstado] = @IDEstado, [IDEquipo] = @IDEquipo, [IDUsuario] = @IDUsuario, [DVH] = @DVH, [Falla] = @Falla, [Tarea] = @Tarea, [Observaciones] = @Observaciones, [FechaReparacion] = @FechaReparacion, [Modelo] = @Modelo, [LastEditDate] = @LastEditDate, [CreationDate] = @CreationDate WHERE ([IDReparacion] = @IDReparacion) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="ReparacionesSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDOrden1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Serie1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDEstado3" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDEquipo1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDUsuario1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@DVH3" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Falla1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Tarea1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Observaciones1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@FechaReparacion1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Modelo1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@LastEditDate3" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@CreationDate3" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDReparacion2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_force_write3" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor6" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count5" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="f26f94be-2124-4923-9217-b9ad201ce3ef" commandText="SELECT [IDReparacion], [DeletionDate] FROM dbo.Reparaciones_Tombstone WHERE ([IDReparacion] = @IDReparacion)" commandType="Text" name="ReparacionesSyncTableSelectConflictDeletedRowsCommand" commandKind="SelectConflictDeletedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDReparacion3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="01c24a95-6fa2-4356-8446-079c505c1c04" commandText="SELECT [IDReparacion], [IDOrden], [Serie], [IDEstado], [IDEquipo], [IDUsuario], [DVH], [Falla], [Tarea], [Observaciones], [FechaReparacion], [Modelo], [LastEditDate], [CreationDate] FROM dbo.Reparaciones WHERE ([IDReparacion] = @IDReparacion)" commandType="Text" name="ReparacionesSyncTableSelectConflictUpdatedRowsCommand" commandKind="SelectConflictUpdatedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDReparacion4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="73a0ad0d-ffb1-43cc-ac91-bbf4e82cbc2d" commandText="SELECT [IDReparacion], [IDOrden], [Serie], [IDEstado], [IDEquipo], [IDUsuario], [DVH], [Falla], [Tarea], [Observaciones], [FechaReparacion], [Modelo], [LastEditDate], [CreationDate] FROM dbo.Reparaciones WHERE ([CreationDate] &gt; @sync_last_received_anchor AND [CreationDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="ReparacionesSyncTableSelectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor7" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="629e3152-fc75-44c0-9f22-1f6563dd2f9f" commandText="SELECT [IDReparacion], [DeletionDate] FROM dbo.Reparaciones_Tombstone WHERE (@sync_initialized = 1 AND [DeletionDate] &gt; @sync_last_received_anchor AND [DeletionDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="ReparacionesSyncTableSelectIncrementalDeletesCommand" commandKind="SelectIncrementalDeletesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_initialized1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor8" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="a3514496-e55a-4aca-a209-1e2dfd1085ba" commandText="SELECT [IDReparacion], [IDOrden], [Serie], [IDEstado], [IDEquipo], [IDUsuario], [DVH], [Falla], [Tarea], [Observaciones], [FechaReparacion], [Modelo], [LastEditDate], [CreationDate] FROM dbo.Reparaciones WHERE ([LastEditDate] &gt; @sync_last_received_anchor AND [LastEditDate] &lt;= @sync_new_received_anchor AND [CreationDate] &lt;= @sync_last_received_anchor)" commandType="Text" name="ReparacionesSyncTableSelectIncrementalUpdatesCommand" commandKind="SelectIncrementalUpdatesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor9" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor5" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="d7049b8f-e71a-4291-a724-78d65eb437e1" commandText="INSERT INTO dbo.OrdenServicio ([IDCliente], [FechaIngreso], [Numero], [IDOrden], [LastEditDate], [CreationDate]) VALUES (@IDCliente, @FechaIngreso, @Numero, @IDOrden, @LastEditDate, @CreationDate) SET @sync_row_count = @@rowcount" commandType="Text" name="OrdenServicioSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDCliente5" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@FechaIngreso" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Numero" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDOrden2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@LastEditDate4" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@CreationDate4" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count6" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="f8e95d64-f1c2-4562-851d-8c1d5144be3e" commandText="DELETE FROM dbo.OrdenServicio WHERE ([IDOrden] = @IDOrden) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="OrdenServicioSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDOrden3" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_force_write4" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor10" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count7" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="b5281007-f0f4-41bf-9385-c8f6eaaa7d75" commandText="UPDATE dbo.OrdenServicio SET [IDCliente] = @IDCliente, [FechaIngreso] = @FechaIngreso, [Numero] = @Numero, [LastEditDate] = @LastEditDate, [CreationDate] = @CreationDate WHERE ([IDOrden] = @IDOrden) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="OrdenServicioSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDCliente6" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@FechaIngreso1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@Numero1" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@LastEditDate5" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@CreationDate5" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDOrden4" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_force_write5" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor11" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_row_count8" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="b9e4490a-9583-4670-a8ac-80e8dadf413c" commandText="SELECT [IDOrden], [DeletionDate] FROM dbo.OrdenServicio_Tombstone WHERE ([IDOrden] = @IDOrden)" commandType="Text" name="OrdenServicioSyncTableSelectConflictDeletedRowsCommand" commandKind="SelectConflictDeletedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDOrden5" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="8c3989ab-420b-4f8c-b690-116b0067f948" commandText="SELECT [IDCliente], [FechaIngreso], [Numero], [IDOrden], [LastEditDate], [CreationDate] FROM dbo.OrdenServicio WHERE ([IDOrden] = @IDOrden)" commandType="Text" name="OrdenServicioSyncTableSelectConflictUpdatedRowsCommand" commandKind="SelectConflictUpdatedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@IDOrden6" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="b7ec0794-78b0-491b-bc67-c2557e3fcaa9" commandText="SELECT [IDCliente], [FechaIngreso], [Numero], [IDOrden], [LastEditDate], [CreationDate] FROM dbo.OrdenServicio WHERE ([CreationDate] &gt; @sync_last_received_anchor AND [CreationDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="OrdenServicioSyncTableSelectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor12" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor6" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="47278ea9-922c-40f1-a739-65bf2d63f310" commandText="SELECT [IDOrden], [DeletionDate] FROM dbo.OrdenServicio_Tombstone WHERE (@sync_initialized = 1 AND [DeletionDate] &gt; @sync_last_received_anchor AND [DeletionDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="OrdenServicioSyncTableSelectIncrementalDeletesCommand" commandKind="SelectIncrementalDeletesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_initialized2" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor13" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor7" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="b051470f-2d6d-4b88-9716-eda51964e0f6" commandText="SELECT [IDCliente], [FechaIngreso], [Numero], [IDOrden], [LastEditDate], [CreationDate] FROM dbo.OrdenServicio WHERE ([LastEditDate] &gt; @sync_last_received_anchor AND [LastEditDate] &lt;= @sync_new_received_anchor AND [CreationDate] &lt;= @sync_last_received_anchor)" commandType="Text" name="OrdenServicioSyncTableSelectIncrementalUpdatesCommand" commandKind="SelectIncrementalUpdatesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_last_received_anchor14" />
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor8" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="6c90cd66-8a14-4436-b884-eee52af90af6" commandText="Select @sync_new_received_anchor = GETUTCDATE()" commandType="Text" name="selectNewAnchorCmd" commandKind="SelectNewAnchorCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/6216ed8a-886d-4645-843f-cda56558f0b9/@sync_new_received_anchor9" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+  </syncAdapterCommands>
+  <syncAdapterCommandParameters>
+    <syncAdapterCommandParameter Id="a3b11592-bbe6-4fc4-9bfc-28f467630e75" parameterType="NVarChar" parameterName="@RazonSocial" name="@RazonSocial" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6a7b9216-94f6-4e28-b00f-14a21541ea5b" parameterType="NVarChar" parameterName="@DVH" name="@DVH" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c67bfab0-03b8-4156-b80a-5f4a92bb0b8c" parameterType="Int" parameterName="@IDEstado" name="@IDEstado" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1c4b3bbc-4949-49a5-9c8f-612aa2831444" parameterType="Int" parameterName="@IDCliente" name="@IDCliente" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="46018b56-332b-4b35-a6e8-ae9d934ad32e" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a791f2e3-d421-4d78-85bc-9bdeb9f8eeec" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="62df3be4-9991-444c-89e0-2f06e87a661b" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="377398ad-a169-4814-b174-0895b2713d5d" parameterType="Int" parameterName="@IDCliente" name="@IDCliente1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3900c0a4-d8ad-42b9-bea7-5da411fc9d07" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0d67dc71-cd43-4432-a4c4-21ae30c7fd0c" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e4d5d374-adbe-4055-bd63-9cdc59ba9c9b" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count1" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="19698e9d-b956-42cf-91db-f34115d51a02" parameterType="NVarChar" parameterName="@RazonSocial" name="@RazonSocial1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f85a643e-dc13-4522-8a40-751bc2318f46" parameterType="NVarChar" parameterName="@DVH" name="@DVH1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c922b759-68a2-4afb-9527-c269a620e554" parameterType="Int" parameterName="@IDEstado" name="@IDEstado1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b85a3aed-fb6b-4514-9e5e-6871e4dddafa" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9ddafad4-bd74-44d6-a002-b8c7843cb47c" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="081fa513-745a-44be-8342-03b36bf64cc9" parameterType="Int" parameterName="@IDCliente" name="@IDCliente2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="57699fb4-c0fa-43ef-9185-ce31e7c893f3" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8d949f73-1a50-43bf-ac18-da5190a0bc66" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7bdb2ddd-cbe4-453d-a8a6-2c41bc4a54c2" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count2" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="dcb6b181-d237-4c8a-adf4-6d4dbded8991" parameterType="Int" parameterName="@IDCliente" name="@IDCliente3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5b6e5550-4d40-4817-bbc2-eb2359894351" parameterType="Int" parameterName="@IDCliente" name="@IDCliente4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b60fd4c1-f3a9-427b-8dce-c2db1a327d7e" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="11d7fb22-e671-4496-bbdd-ac629e3c9c65" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c0e3ab02-6336-4930-99ca-c863927d53e4" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b4769186-d87b-4e2f-8bd4-ba584950b81e" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5d6a2b05-29f7-496f-8f87-91b0122b0114" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ab2911dc-b393-46fd-8c49-5e30970dce83" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="590c2bad-accb-4650-ad55-1131b12e58a4" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="53ded7e0-c000-4715-b900-80ba5b919677" parameterType="Int" parameterName="@IDReparacion" name="@IDReparacion" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6490360a-d6d6-40e9-a0b0-40c06d7b95fa" parameterType="Int" parameterName="@IDOrden" name="@IDOrden" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4ca292a3-bdb1-449e-bd1c-59c748ba207a" parameterType="NVarChar" parameterName="@Serie" name="@Serie" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d23da308-a331-4009-a878-4d7d515ae601" parameterType="Int" parameterName="@IDEstado" name="@IDEstado2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="838b3bdc-cd71-43c4-8594-520ce14822b4" parameterType="Int" parameterName="@IDEquipo" name="@IDEquipo" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bc0303ff-d283-47bd-bd3d-6971c472bafb" parameterType="Int" parameterName="@IDUsuario" name="@IDUsuario" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c9182754-9499-4007-b587-b09e75c49824" parameterType="Int" parameterName="@DVH" name="@DVH2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1b24cc56-5bfa-4ce8-9080-b3e40b47322a" parameterType="NVarChar" parameterName="@Falla" name="@Falla" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d68dd9c5-2911-4a49-9dd1-81dcde6a2ae0" parameterType="NVarChar" parameterName="@Tarea" name="@Tarea" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="2a842517-bfcb-4c4e-8fc0-ed7c8d7d2c8c" parameterType="NVarChar" parameterName="@Observaciones" name="@Observaciones" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="921d9d5c-2040-45a2-96f9-d38b08000b12" parameterType="NVarChar" parameterName="@FechaReparacion" name="@FechaReparacion" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8b426cc1-b9ea-42c4-80a1-efd4e146f9c9" parameterType="NVarChar" parameterName="@Modelo" name="@Modelo" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="39a2ee9e-1c69-4a64-8e3c-56a480bdd237" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3ea0c20d-28e2-4604-b111-9caf2998060d" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="46b5f8a8-a2e0-401e-8cd1-d67de75a848f" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count3" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="609bcb8f-34f5-499d-82c0-23442f45a724" parameterType="Int" parameterName="@IDReparacion" name="@IDReparacion1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bf04fdf5-5ba5-4ebf-a23d-142947800a71" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="69f67a25-714a-4d30-8137-003cad017aa2" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="64f22070-c3a5-47c0-b950-e5d3796dd6ac" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count4" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="f1b5f9b3-d1c5-4b51-9256-790614a2fda9" parameterType="Int" parameterName="@IDOrden" name="@IDOrden1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="cd009b4d-b19c-42a7-9120-b438ffb4080e" parameterType="NVarChar" parameterName="@Serie" name="@Serie1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="07842d97-b6b5-4824-8157-bc252e713ea2" parameterType="Int" parameterName="@IDEstado" name="@IDEstado3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="77394678-cf6e-45b8-ad95-d6d5f8dc8053" parameterType="Int" parameterName="@IDEquipo" name="@IDEquipo1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7b1f19f8-be1c-4870-a209-38e5f74efb1f" parameterType="Int" parameterName="@IDUsuario" name="@IDUsuario1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e0626ae6-6ae2-4599-abb3-38dcb3dbc8e7" parameterType="Int" parameterName="@DVH" name="@DVH3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="52080141-b4ea-4a9d-af8f-af0131a98662" parameterType="NVarChar" parameterName="@Falla" name="@Falla1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b66fc005-0eaa-4ff9-9982-94f8414778c0" parameterType="NVarChar" parameterName="@Tarea" name="@Tarea1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d9b1879f-bc7b-4b68-b620-9d762598f490" parameterType="NVarChar" parameterName="@Observaciones" name="@Observaciones1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dd0d865d-4928-4d9f-9920-8776727abc39" parameterType="NVarChar" parameterName="@FechaReparacion" name="@FechaReparacion1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bea92a54-f8cb-433e-a988-60008bc5c56f" parameterType="NVarChar" parameterName="@Modelo" name="@Modelo1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="06442530-9072-41e2-b599-4ac3fa36d98e" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="2aecec27-be2e-48cc-ac9f-cda65effa356" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c8b0a94c-7087-438c-b5ba-ddab7916751c" parameterType="Int" parameterName="@IDReparacion" name="@IDReparacion2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="647c2545-d0d2-4f9c-abaf-d15cfcec1be5" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="49fb8c7d-9331-4923-97fb-61fdca5863e1" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor6" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dc1fcc75-2e1e-4021-bfcc-7ffa929a1bd9" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count5" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="d3949383-dac1-4b60-a9b7-a7e6f1d6efbd" parameterType="Int" parameterName="@IDReparacion" name="@IDReparacion3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3766da23-3de6-4406-be7b-318906124bc1" parameterType="Int" parameterName="@IDReparacion" name="@IDReparacion4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4aadd31e-7a7c-4bf6-9f6d-62017a95bbd5" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor7" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dcd12ca6-6319-43d2-8e05-c130a1675885" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="61164509-0304-456a-a39a-e271bed82ed7" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e093759d-a736-49e4-a4ba-378974520dbf" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor8" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6c7d42c1-6952-4d3c-b4e1-23b19511550c" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4737fc3f-16d5-4466-938b-bc3b77dd8dbe" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor9" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5919a9a2-0b54-44df-8249-d3987098ce48" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e228d09a-54b6-42da-8982-efa9507d511c" parameterType="Int" parameterName="@IDCliente" name="@IDCliente5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d3e90a7e-49d3-47ee-9a57-da20c1e387b2" parameterType="NVarChar" parameterName="@FechaIngreso" name="@FechaIngreso" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fb89a375-e2a2-48d1-8001-f3d750f3c15f" parameterType="NVarChar" parameterName="@Numero" name="@Numero" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="188ee295-fb82-41bc-8939-9ed58abde275" parameterType="Int" parameterName="@IDOrden" name="@IDOrden2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9b098684-1160-4fa7-9967-0c5d3b03c92a" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f6da2372-dbd1-4342-a218-4470f1a2976e" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e5145bfc-8156-4e70-8a2b-f25bb73230e0" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count6" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="298c8cc2-99f6-41b3-9303-ce9fee6b3872" parameterType="Int" parameterName="@IDOrden" name="@IDOrden3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="744a36ee-9a59-43e0-8f25-f00521fa4661" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="74f90266-9d67-407f-8578-9dce44359e01" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor10" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8ffdd750-a041-45f5-9e4c-9792277cb393" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count7" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="02899d49-e41e-40f1-88d7-4132d163753c" parameterType="Int" parameterName="@IDCliente" name="@IDCliente6" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ff69e9ca-e5b6-4d81-aeae-d51bec2f95e2" parameterType="NVarChar" parameterName="@FechaIngreso" name="@FechaIngreso1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6966e3a6-f2c0-418e-8397-a769ff922c74" parameterType="NVarChar" parameterName="@Numero" name="@Numero1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dc987229-9e62-448d-8663-032d1010e056" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="464b7c0e-1147-429f-8817-356ac9ec20e3" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="da42db75-82f3-4d22-9146-37896c3f2a31" parameterType="Int" parameterName="@IDOrden" name="@IDOrden4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="69e9823b-d1a8-4be7-b2ca-1d791c2d6240" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b185161d-633e-4936-bfc3-16dfae44195a" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor11" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bb8ae523-f913-4145-bf6b-e7b057dc2615" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count8" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="989f8a52-5868-4741-8017-488cbfe374b8" parameterType="Int" parameterName="@IDOrden" name="@IDOrden5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b1c4741d-307b-436f-8c88-7b6e0f625880" parameterType="Int" parameterName="@IDOrden" name="@IDOrden6" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f3e85937-e296-45aa-bee9-d22487675cd6" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor12" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5d2cc563-f6d3-4913-9d66-3086f2f6f9a0" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor6" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="dd98e59e-d657-49b5-8417-22d983e92aaf" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="800a6ade-6ece-4a66-b90e-68543a2a7096" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor13" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6a3423ba-1d88-45f0-a3bb-28a4334a10ec" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor7" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fa31c2a9-6bcc-4118-b550-b443b786afe9" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor14" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7c306fcb-b7d6-4769-a740-ca7fb069c891" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor8" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e3827b34-eb3b-4574-9229-cd2148bb5dd5" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor9" parameterDirection="Output" />
+  </syncAdapterCommandParameters>
+  <syncConnections>
+    <syncConnection Id="356c9a18-c5cc-4918-add5-10c365decabe" name="ClientConnection" connectionDisplayString="ClientSIGTConnectionString (MySettings)" isAppSettings="true" appSettingsObjectName="MySettings" appSettingsPropertyName="ClientSIGTConnectionString" appSettingsPropertyReference="" />
+    <syncConnection Id="45eac1ab-3242-43e4-9d0d-d83ae8f579e0" name="ServerConnection" connectionDisplayString="SIGTConnection (MySettings)" isAppSettings="true" appSettingsObjectName="MySettings" appSettingsPropertyName="SIGTConnection" appSettingsPropertyReference="" />
+  </syncConnections>
+</syncDesignerSurface>
